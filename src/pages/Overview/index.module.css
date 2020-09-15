@@ -1,0 +1,228 @@
+.overview {
+    background-color: #fff;
+    padding: 32px;
+}
+
+.overview p {
+    line-height: 1.6;
+}
+
+.hostedBy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.hostedBy .leftCol {
+    flex-basis: 60%;
+}
+
+.hostedBy .rightCol {
+    flex-basis: 35%;
+}
+
+.hostedBy h4 {
+    font-size: 16px;
+}
+
+.hostedBy p {
+    font-size: 14px;
+}
+
+.hostedBy .leftCol>div,
+.hostedBy .rightCol {
+    display: flex;
+    align-items: center;
+}
+
+.hostedBy .leftCol>div>div:nth-of-type(1) {
+    margin-right: 16px;
+}
+
+.hostedBy .leftCol h4,
+.hostedBy .rightCol p {
+    margin-bottom: 4px;
+}
+
+.hostedBy .leftCol button {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: unset;
+    padding: 2px 32px;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.hostedBy .rightCol {
+    justify-content: space-between;
+}
+
+.hostedBy .rightCol>div:not(:last-of-type) {
+    margin-right: 24px;
+}
+
+
+
+
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent .leftCol {
+    flex-basis: 60%;
+}
+
+.mainContent .rightCol {
+    flex-basis: 35%;
+}
+
+.mainContent .leftCol li {
+    list-style: disc;
+    margin-left: 32px;
+    padding-left: 8px;
+}
+
+.mainContent>div>div {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.mainContent .rightCol .price>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price .pool {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.price h3 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.price h3 span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.price p {
+    color: var(--secondary-color);
+}
+
+.mainContent .rightCol .price>div>div {
+    flex-basis: 45%;
+}
+
+.mainContent .rightCol .price .priceBoxes {
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.mainContent .rightCol .price .priceBoxes>div {
+    margin-right: 8px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    position: relative;
+    justify-content: center;
+}
+
+.mainContent .rightCol .price .priceBoxes p {
+    position: absolute;
+    top: -30px;
+    color: var(--secondary-color);
+}
+
+.mainContent .rightCol .price .priceBoxes>div:nth-of-type(1) {
+    background-color: crimson;
+    height: 80px;
+}
+
+.mainContent .rightCol .price .priceBoxes>div:nth-of-type(2) {
+    background-color: darksalmon;
+    height: 120px;
+}
+
+.mainContent .rightCol .price .priceBoxes>div:nth-of-type(3) {
+    background-color: darkgray;
+    height: 40px;
+}
+
+
+
+.gameSettings figure {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.gameSettings>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameSettings div p {
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.gameSettings div h4 {
+    font-size: 16px;
+}
+
+
+
+
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContent .leftCol {
+    flex-basis: 60%;
+}
+
+.footerContent .leftCol>div {
+    display: flex;
+
+}
+
+.footerContent .leftCol svg {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-right: 30px;
+}
+
+.footerContent .rightCol {
+    flex-basis: 35%;
+}
+
+@media (max-width: 767px) {
+
+    .hostedBy,
+    .mainContent,
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .hostedBy .leftCol,
+    .footerContent .leftCol {
+        margin-bottom: 30px;
+    }
+}

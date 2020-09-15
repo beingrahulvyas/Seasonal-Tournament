@@ -1,0 +1,212 @@
+.topHeader {
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0 ,0 ,0, 0.4); */
+    padding: 16px 0;
+}
+
+.topHeader>div {
+    display: flex;
+    align-items: center;
+}
+
+.topHeader>div>*:not(:last-child) {
+    margin-right: 16px;
+}
+
+.topHeader .searchBox {
+    flex-grow: 1;
+    position: relative;
+    padding-left: 40px;
+    margin-left: 8px;
+}
+
+.topHeader .searchBox svg {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.topHeader button {
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+
+
+
+
+.mainHeader aside {
+    min-height: 95vh;
+    height: 100%;
+    padding: 20vh 16px 16px 16px;
+    position: fixed;
+    left: 0;
+    top: 67px;
+    width: 60px;
+}
+
+.mainHeader aside nav li {
+    margin-bottom: 16px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.mainHeader aside nav li.active,
+.mainHeader aside nav li:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 6px var(--primary-color);
+    color: #fff;
+}
+
+
+
+.heading {
+    padding: 24px 16px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading .leftCol {
+    display: flex;
+    align-items: center;
+}
+
+.mobileLeftColTitle {
+    display: none;
+}
+
+.heading .leftCol h1 {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.heading .leftCol span {
+    font-size: 12px;
+    padding: 4px 16px;
+    background-color: #0c9b28;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.heading .rightCol {
+    display: flex;
+    align-items: center;
+}
+
+.heading .rightCol .dateTime {
+    display: flex;
+}
+
+.heading .rightCol .date {
+    letter-spacing: 3px;
+    padding-right: 16px;
+    border-right: 1px solid var(--secondary-color);
+    line-height: 1;
+}
+
+.heading .rightCol .date span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.heading .rightCol .time {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 16px;
+    margin-right: 16px;
+}
+
+.heading .rightCol .time span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.heading .rightCol button {
+    padding: 4px 24px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--primary-color);
+}
+
+
+
+
+.showcase {
+    margin-left: 50px;
+    max-height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+
+
+.mainNav {
+    margin-left: 50px;
+    padding: 16px 0 24px 0;
+    padding-left: 36px;
+}
+
+.mainNav .navLink {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mainNav .navLink:not(:last-child) {
+    margin-right: 32px;
+}
+
+.mainNav .activeNavLink {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.mainNav .activeNavLink::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 32px;
+    background-color: var(--primary-color);
+    height: 2px;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .topHeader .searchBox svg {
+        right: 8px;
+        left: auto;
+    }
+
+    .heading {
+        justify-content: center;
+    }
+
+    .heading .leftCol {
+        display: none;
+    }
+
+    .mobileLeftColTitle {
+        display: block;
+        margin-left: 50px;
+        padding: 16px 0;
+    }
+
+    .mainHeader aside {
+        display: none;
+    }
+}

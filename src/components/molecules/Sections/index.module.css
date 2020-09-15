@@ -1,0 +1,9 @@
+.sections {
+    margin-bottom: 40px;
+}
+
+.sections > h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
